@@ -15,6 +15,6 @@
           <li><a href="#">Cold Foam</a></li>
         </ul>              
       </nav>    
-      <img src="asset/img/vertical-menu-bg.png" alt="Menu bg" class="tm-side-menu-bg">
+      <img src="{{ asset('asset/img/vertical-menu-bg.png') }}" alt="Menu bg" class="tm-side-menu-bg">
     </div>  
   </div>

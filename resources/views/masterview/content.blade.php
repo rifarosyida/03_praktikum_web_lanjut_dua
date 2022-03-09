@@ -11,10 +11,10 @@ http://www.templatemo.com/tm-466-cafe-house
 -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
-  <link href="asset/css/bootstrap.min.css" rel="stylesheet">
-  <link href="asset/css/font-awesome.min.css" rel="stylesheet">
-  <link href="asset/css/templatemo-style.css" rel="stylesheet">
-  <link rel="shortcut icon" href="asset/img/favicon.ico" type="image/x-icon" /> 
+  <link href="{{ asset('asset/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('asset/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('asset/css/templatemo-style.css') }}" rel="stylesheet">
+  <link rel="shortcut icon" href="{{ asset('asset/img/favicon.ico') }}" type="image/x-icon" /> 
 </head>
 <body onload="loadGoogleMap()">
        <!-- Preloader -->
@@ -29,7 +29,7 @@ http://www.templatemo.com/tm-466-cafe-house
         @yield('content')
     </div>
     @include('masterview.footer')
-<script type="text/javascript" src="asset/js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
-<script type="text/javascript" src="asset/js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+<script type="text/javascript" src="{{ asset('asset/js/jquery-1.11.2.min.js') }}"></script>      <!-- jQuery -->
+<script type="text/javascript" src="{{ asset('asset/js/templatemo-script.js') }}"></script>      <!-- Templatemo Script -->
 </body>
 </html>
