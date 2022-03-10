@@ -13,6 +13,18 @@ COLOR CODES
 /** Preloader 
 * https://ihatetomatoes.net/create-custom-preloading-screen/
 */
+.btn-primary {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #534340;
+  color: white;
+  font-weight: bold;
+}
+.jenis-menu{
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+}
 #loader-wrapper {
     position: fixed;
     top: 0;

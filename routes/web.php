@@ -21,6 +21,7 @@ Route::get('/', [IndexController::class, 'index']);
 //Menu Today Special
 Route::get('/today-special', [TodaySpecialController::class, 'todayspecial']);
 //Menu
-Route::get('/menu',[MenuController::class, 'menu']);
+Route::get('/menu/minuman',[MenuController::class, 'menu'])->name('minuman');
+Route::get('/menu/makanan',[MenuController::class, 'menuMakan'])->name('makanan');
 //Menu Contact
 Route::get('/contact',[ContactController::class, 'contact']);

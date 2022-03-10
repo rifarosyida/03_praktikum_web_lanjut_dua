@@ -26,17 +26,27 @@
             <div class="tm-hr-container"><hr class="tm-hr"></div>
             </div>
             <div class="col-lg-12 tm-popular-items-container">
-            <div class="tm-popular-item">
-                <img src="{{ asset('asset/img/salted-caramel.jpg') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
-                <div class="tm-popular-item-description">
-                    <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">s</span>alted caramel mocha</h3><hr class="tm-popular-item-hr">
-                    <p>Mocha nikmat dengan Salted Caramel yang gurih</p>
-                <div class="order-now-container">
-                    <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
+
+            @foreach($all_menu as $objek)
+            
+                <div class="tm-popular-item">
+                    <img src="{{ asset('asset/img/'.$objek->gambar) }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+                    <div class="tm-popular-item-description">
+                        <h3 class="tm-handwriting-font tm-popular-item-title">{{ $objek->nama }}</h3><hr class="tm-popular-item-hr">
+                        <p>{{ $objek->deskripsi }}</p>
+                    <div class="order-now-container">
+                        <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
+                    </div>
+                    </div>              
                 </div>
-                </div>              
-            </div>
-            <div class="tm-popular-item">
+          
+            @endforeach
+        </div> 
+        <div class="col-lg-12">
+            {{ $all_menu->links() }}
+        </div>
+       
+            {{-- <div class="tm-popular-item">
                 <img src="{{ asset('asset/img/Pavlova-1.jpg') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
                 <div class="tm-popular-item-description">
                 <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">b</span>erry pavlova</h3><hr class="tm-popular-item-hr">
@@ -85,8 +95,8 @@
                     <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
                 </div>              
-            </div>
-            </div>       
+            </div> --}}
+                  
         </section>
         <section class="tm-section">
             <div class="row">

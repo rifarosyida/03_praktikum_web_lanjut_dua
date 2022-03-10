@@ -4,9 +4,9 @@
     <section class="tm-welcome-section">
         <div class="container tm-position-relative">
         <div class="tm-lights-container">
-          <img src="{{ asset('asset/img/light.png') }}" alt="Light" class="light light-1">
-          <img src="{{ asset('asset/img/light.png') }}" alt="Light" class="light light-2">
-          <img src="{{ asset('asset/img/light.png') }}" alt="Light" class="light light-3">   
+            <img src="{{ asset('asset/img/light.png') }}" alt="Light" class="light light-1">
+            <img src="{{ asset('asset/img/light.png') }}" alt="Light" class="light light-2">
+            <img src="{{ asset('asset/img/light.png') }}" alt="Light" class="light light-3">  
         </div>        
         <div class="row tm-welcome-content">
             <h2 class="white-text tm-handwriting-font tm-welcome-header"><img src="{{ asset('asset/img/header-line.png') }}" alt="Line" class="tm-header-line">&nbsp;Welcome To&nbsp;&nbsp;<img src="{{ asset('asset/img/header-line.png') }}" alt="Line" class="tm-header-line"></h2>
@@ -42,30 +42,30 @@
             </div>
             <div class="col-lg-12 tm-popular-items-container">
             <div class="tm-popular-item">
-                <img src="{{ asset('asset/img/americano-1.jpg') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+                <img src="{{asset('asset/img/'.$menu_americano->gambar)}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
                 <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">a</span>mericano</h3><hr class="tm-popular-item-hr">
-                <p>Americano dibuat dari campuran espresso berkualitas yang diseduh dan ditambahkan dengan air</p>
+                <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_americano->nama}}</h3><hr class="tm-popular-item-hr">
+                <p>{{$menu_americano->deskripsi}}</p>
                 <div class="order-now-container">
                     <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
               </div>              
             </div>
             <div class="tm-popular-item">
-              <img src="{{ asset('asset/img/cappuccino-1.jpg') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+              <img src="{{ asset('asset/img/'.$menu_cappuccino->gambar) }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
               <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">c</span>appuccino</h3><hr class="tm-popular-item-hr">
-                <p>Cappucino dibuat dari campuran espresso berkualitas dengan susu segar, dibuat dengan foam lembut</p>
+                <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_cappuccino->nama}}</h3><hr class="tm-popular-item-hr">
+                <p>{{$menu_cappuccino->deskripsi}}</p>
                 <div class="order-now-container">
                   <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
               </div>              
             </div>
             <div class="tm-popular-item">
-              <img src="{{ asset('asset/img/mocha-1.png') }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+              <img src="{{asset('asset/img/'.$menu_mocha->gambar)}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
               <div class="tm-popular-item-description">
-                <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">m</span>ocha</h3><hr class="tm-popular-item-hr">
-                <p>Mocha dibuat dari campuran espresso berkualitas dengan coklat belgia dan susu segar</p>
+                <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_mocha->nama}}</h3><hr class="tm-popular-item-hr">
+                <p>{{$menu_mocha->deskripsi}}</p>
                 <div class="order-now-container">
                   <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
                 </div>
@@ -82,11 +82,11 @@
             <div class="tm-special-container-left"> <!-- left -->
               <div class="tm-special-item">
                 <div class="tm-special-img-container">
-                  <img src="{{ asset('asset/img/salted-caramel.jpg') }}" alt="Special" class="tm-special-img img-responsive" style="width: 520px; height: 400px;">  
+                  <img src="{{asset('asset/img/'.$menu_salted->gambar)}}" alt="Special" class="tm-special-img img-responsive" style="width: 520px; height: 400px;">  
                   <a href="#">
                     <div class="tm-special-description">
-                      <h3 class="tm-special-title">Salted Caramel Mocha</h3>
-                      <p>Mocha Coffee nikmat ditambah dengan topping Salted Caramel yang gurih</p>  
+                      <h3 class="tm-special-title">{{$menu_salted->nama}}</h3>
+                      <p>{{$menu_salted->deskripsi}}</p>  
                     </div>            
                   </a>
                 </div>
@@ -96,11 +96,11 @@
               <div>
                 <div class="tm-special-item">
                   <div class="tm-special-img-container">
-                    <img src="{{ asset('asset/img/pavlova-1.jpg') }}" alt="Special" class="img-responsive" style="width: 360px; height: 207px;">  
+                    <img src="{{asset('asset/img/'.$menu_pavlova->gambar)}}" alt="Special" class="img-responsive" style="width: 360px; height: 207px;">  
                     <a href="#">
                       <div class="tm-special-description">
-                        <h3 class="tm-special-title">Berry Pavlova</h3>
-                        <p>Crunchy diluar dan lembut di dalam dengan manisnya berry</p>
+                        <h3 class="tm-special-title">{{ $menu_pavlova->nama}}</h3>
+                        <p>{{$menu_pavlova->deskripsi}}</p>
                       </div>
                     </a>
                   </div>
@@ -109,20 +109,20 @@
               <div class="tm-special-container-lower">
                 <div class="tm-special-item">
                   <div class="tm-special-img-container">
-                    <img src="{{ asset('asset/img/almond-croissant-1.png') }}" alt="Special" class="img-responsive" style="width: 155px; height: 155px;">  
+                    <img src="{{asset('asset/img/'.$menu_croissant->gambar)}}" alt="Special" class="img-responsive" style="width: 155px; height: 155px;">  
                     <a href="#">
                       <div class="tm-special-description">
-                        <p>Almond Croissant</p>
+                        <p>{{$menu_croissant->nama}}</p>
                       </div>
                     </a>
                   </div>
                 </div>
                 <div class="tm-special-item">
                   <div class="tm-special-img-container">
-                    <img src="{{ asset('asset/img/prawn-aglio-1.png') }}" alt="Special" class="img-responsive" style="width: 155px; height: 155px;">  
+                    <img src="{{asset('asset/img/'.$menu_aglio->gambar)}}" alt="Special" class="img-responsive" style="width: 155px; height: 155px;">  
                     <a href="#">
                       <div class="tm-special-description">
-                        <p>Prawn Aglio e Olio</p>
+                        <p>{{$menu_aglio->nama}}</p>
                       </div>
                     </a>
                   </div>

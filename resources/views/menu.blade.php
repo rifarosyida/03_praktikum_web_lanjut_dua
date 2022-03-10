@@ -3,6 +3,8 @@
 @section('content')
 
 <section class="tm-welcome-section">
+  {{-- Mengecek apakah DB sudah masuk --}}
+  {{-- @dd($all_menu) --}}
     <div class="container tm-position-relative">
       <div class="tm-lights-container">
         <img src="{{ asset('asset/img/light.png') }}" alt="Light" class="light light-1">
@@ -46,17 +48,25 @@
 @include('masterview.sidebar')
 
 <div class="tm-menu-product-content col-lg-9 col-md-9"> <!-- menu content -->
+  <div class="jenis-menu">
+    <a class="btn-primary" href="{{ route('minuman') }}">Minuman</a>
+    <a class="btn-primary" href="{{ route('makanan') }}">Makanan</a>
+  </div>
+    @foreach ($all_menu as $objek)
     <div class="tm-product">
-      <img src="{{ asset('asset/img/menu1.png') }}" alt="Product" >
+      <img src="{{ asset('asset/img/'.$objek->gambar) }}" alt="Product" width="136px">
       <div class="tm-product-text">
-        <h3 class="tm-product-title">Caffé Mocha</h3>
-        <p class="tm-product-description">Mocha dibuat dari campuran espresso berkualitas dengan coklat belgia dan susu segar</p>
+        <h3 class="tm-product-title">{{ $objek->nama }}</h3>
+        <p class="tm-product-description">{{ $objek->deskripsi }} </p>
+        <br><strong>Stok : {{ $objek->stok }}</strong>
+        
       </div>
       <div class="tm-product-price">
-        <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">$</span>30</a>
+        <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">$</span>{{ $objek->harga }}</a>
       </div>
     </div>
-    <div class="tm-product">
+    @endforeach
+   {{-- <div class="tm-product">
       <img src="{{ asset('asset/img/menu2.jpg') }}" alt="Product">
       <div class="tm-product-text">
         <h3 class="tm-product-title">Americano</h3>
@@ -66,7 +76,7 @@
         <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">$</span>20</a>
       </div>
     </div>
-    <div class="tm-product">
+     <div class="tm-product">
       <img src="{{ asset('asset/img/menu3.jpg') }}" alt="Product">
       <div class="tm-product-text">
         <h3 class="tm-product-title">Cappucino</h3>
@@ -96,7 +106,7 @@
       <div class="tm-product-price">
         <a href="#" class="tm-product-price-link tm-handwriting-font"><span class="tm-product-price-currency">$</span>45</a>
       </div>
-    </div>
+    </div> --}}
   </div>
 </div>          
 </section>
