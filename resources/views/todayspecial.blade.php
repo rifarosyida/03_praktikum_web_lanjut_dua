@@ -42,7 +42,7 @@
           
             @endforeach
         </div> 
-        <div class="col-lg-12">
+        <div class="page-item">
             {{ $all_menu->links() }}
         </div>
        
