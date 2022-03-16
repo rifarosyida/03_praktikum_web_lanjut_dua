@@ -101,7 +101,7 @@ class MenuSeeder extends Seeder
                     'stok'=> 8,
                     'harga' => 45,
                     'deskripsi' => 'Blend Cream adalah minuman coklat Belgia dengan susu segar, serta cream lembut di atasnya',
-                    'gambar' => 'menu5.jpg',
+                    'gambar' => 'asset/img/menu5.jpg',
                     'kategori'=> 'minuman'
 
                 ]
