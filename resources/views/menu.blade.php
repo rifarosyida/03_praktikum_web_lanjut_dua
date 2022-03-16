@@ -49,8 +49,8 @@
 
 <div class="tm-menu-product-content col-lg-9 col-md-9"> <!-- menu content -->
   <div class="jenis-menu">
-    <a class="btn-primary" href="{{ route('minuman') }}">Minuman</a>
-    <a class="btn-primary" href="{{ route('makanan') }}">Makanan</a>
+    <a class="btn-primary" href="{{ url('menu/minuman') }}">Minuman</a>
+    <a class="btn-primary" href="{{ url('menu/makanan') }}">Makanan</a>
   </div>
     @foreach ($all_menu as $objek)
     <div class="tm-product">

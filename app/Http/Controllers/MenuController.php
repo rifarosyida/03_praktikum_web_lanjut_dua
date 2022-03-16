@@ -6,18 +6,18 @@ use Illuminate\Http\Request;
 
 class MenuController extends Controller
 {
-    public function menu(){
-        $menu_minuman = Menu::where('kategori','=','minuman')->get();
+    public function menu($keyword){
+        $menu_minuman = Menu::where('kategori','=',$keyword)->get();
 
         return view ('menu')
                 ->with('title', 'Cafe House-Menu')
                 ->with('all_menu', $menu_minuman);
     }
-    public function menuMakan(){
-        $menu_makanan = Menu::where('kategori','=','makanan')->get();
+    // public function menuMakan(){
+    //     $menu_makanan = Menu::where('kategori','=','makanan')->get();
 
-        return view ('menu')
-                ->with('title', 'Cafe House-Menu')
-                ->with('all_menu', $menu_makanan);
-    }
+    //     return view ('menu')
+    //             ->with('title', 'Cafe House-Menu')
+    //             ->with('all_menu', $menu_makanan);
+    // }
 }

@@ -16,12 +16,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::pattern('keyword', '[0-9a-zA-Z]+');
+
 //Menu Home
 Route::get('/', [IndexController::class, 'index']);
 //Menu Today Special
 Route::get('/today-special', [TodaySpecialController::class, 'todayspecial']);
 //Menu
-Route::get('/menu/minuman',[MenuController::class, 'menu'])->name('minuman');
-Route::get('/menu/makanan',[MenuController::class, 'menuMakan'])->name('makanan');
+Route::get('/menu/{keyword}',[MenuController::class, 'menu'])->name('minuman');
+//Route::get('/menu/makanan',[MenuController::class, 'menuMakan'])->name('makanan');
 //Menu Contact
 Route::get('/contact',[ContactController::class, 'contact']);
