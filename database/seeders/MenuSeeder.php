@@ -21,7 +21,7 @@ class MenuSeeder extends Seeder
                     'stok'=> 10,
                     'harga' => 13,
                     'deskripsi' => 'Americano dibuat dari campuran espresso berkualitas yang diseduh dan ditambahkan dengan air',
-                    'gambar' => 'menu2.jpg',
+                    'gambar' => 'asset/img/menu2.jpg',
                     'kategori'=> 'minuman'
                 ],
                 [
@@ -29,7 +29,7 @@ class MenuSeeder extends Seeder
                     'stok'=> 15,
                     'harga' => 15,
                     'deskripsi' => 'Cappucino dibuat dari campuran espresso berkualitas dengan susu segar, dibuat dengan foam lembut',
-                    'gambar' => 'menu3.jpg',
+                    'gambar' => 'asset/img/menu3.jpg',
                     'kategori'=> 'minuman'
                 ],
                 [
@@ -37,7 +37,7 @@ class MenuSeeder extends Seeder
                     'stok'=> 9,
                     'harga' => 23,
                     'deskripsi' => 'Mocha dibuat dari campuran espresso berkualitas dengan coklat belgia dan susu segar',
-                    'gambar' => 'menu1.png',
+                    'gambar' => 'asset/img/menu1.png',
                     'kategori'=> 'minuman'
                 ],
                 [
@@ -45,7 +45,7 @@ class MenuSeeder extends Seeder
                     'stok' => 5,
                     'harga' => 30,
                     'deskripsi' => 'Mocha nikmat dengan Salted Caramel yang gurih',
-                    'gambar' => 'salted-caramel.jpg',
+                    'gambar' => 'asset/img/salted-caramel.jpg',
                     'kategori'=> 'minuman'
                 ],
                 [
@@ -53,7 +53,7 @@ class MenuSeeder extends Seeder
                     'stok' => 5,
                     'harga' => 45,
                     'deskripsi' => 'Crunchy diluar dan lembut di dalam dengan manisnya berry',
-                    'gambar' => 'Pavlova-1.jpg',
+                    'gambar' => 'asset/img/Pavlova-1.jpg',
                     'kategori'=> 'makanan'
                 ],
                 [
@@ -61,7 +61,7 @@ class MenuSeeder extends Seeder
                     'stok' => 12,
                     'harga' => 28,
                     'deskripsi' => 'Croissant lembut dan berlayer dengan Crunchy Almond di luar',
-                    'gambar' => 'almond-croissant-1.png',
+                    'gambar' => 'asset/img/almond-croissant-1.png',
                     'kategori'=> 'makanan'
                 ],
                 [
@@ -69,7 +69,7 @@ class MenuSeeder extends Seeder
                     'stok' => 4,
                     'harga' => 50,
                     'deskripsi' => 'Spagetti gurih dengan tambahan udang yang kenyal',
-                    'gambar' => 'prawn-aglio-1.png',
+                    'gambar' => 'asset/img/prawn-aglio-1.png',
                     'kategori'=> 'makanan'
                 ],
                 [
@@ -77,7 +77,7 @@ class MenuSeeder extends Seeder
                     'stok' => 8,
                     'harga' => 17,
                     'deskripsi' => 'Teh herbal dari bunga chamomile yang berguna untuk mengatasi insomnia',
-                    'gambar' => 'camomile-tea.jpg',
+                    'gambar' => 'asset/img/camomile-tea.jpg',
                     'kategori'=> 'minuman'
                 ],
                 [
@@ -85,7 +85,7 @@ class MenuSeeder extends Seeder
                     'stok' => 10,
                     'harga' => 19,
                     'deskripsi' => 'Teh bunga telang yang dapat membuat suasana hati yang seimbang',
-                    'gambar' => 'pea-tea-butterfly.jpg',
+                    'gambar' => 'asset/img/pea-tea-butterfly.jpg',
                     'kategori'=> 'minuman'
                 ],
                 [
@@ -93,7 +93,7 @@ class MenuSeeder extends Seeder
                     'stok'=> 11,
                     'harga' => 25,
                     'deskripsi' => 'Blend coffee adalah kopi yang terdiri dari beberapa campuran jenis kopi, baik kopi arabika maupun kopi robusta',
-                    'gambar' => 'menu4.jpg',
+                    'gambar' => 'asset/img/menu4.jpg',
                     'kategori'=> 'minuman'
                 ],
                 [

@@ -42,7 +42,7 @@
             </div>
             <div class="col-lg-12 tm-popular-items-container">
             <div class="tm-popular-item">
-                <img src="{{asset('asset/img/'.$menu_americano->gambar)}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+                <img src="{{asset($menu_americano->gambar)}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
                 <div class="tm-popular-item-description">
                 <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_americano->nama}}</h3><hr class="tm-popular-item-hr">
                 <p>{{$menu_americano->deskripsi}}</p>
@@ -52,7 +52,7 @@
               </div>              
             </div>
             <div class="tm-popular-item">
-              <img src="{{ asset('asset/img/'.$menu_cappuccino->gambar) }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+              <img src="{{ asset($menu_cappuccino->gambar) }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
               <div class="tm-popular-item-description">
                 <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_cappuccino->nama}}</h3><hr class="tm-popular-item-hr">
                 <p>{{$menu_cappuccino->deskripsi}}</p>
@@ -62,7 +62,7 @@
               </div>              
             </div>
             <div class="tm-popular-item">
-              <img src="{{asset('asset/img/'.$menu_mocha->gambar)}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+              <img src="{{asset($menu_mocha->gambar)}}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
               <div class="tm-popular-item-description">
                 <h3 class="tm-handwriting-font tm-popular-item-title">{{$menu_mocha->nama}}</h3><hr class="tm-popular-item-hr">
                 <p>{{$menu_mocha->deskripsi}}</p>
@@ -82,7 +82,7 @@
             <div class="tm-special-container-left"> <!-- left -->
               <div class="tm-special-item">
                 <div class="tm-special-img-container">
-                  <img src="{{asset('asset/img/'.$menu_salted->gambar)}}" alt="Special" class="tm-special-img img-responsive" style="width: 520px; height: 400px;">  
+                  <img src="{{asset($menu_salted->gambar)}}" alt="Special" class="tm-special-img img-responsive" style="width: 520px; height: 400px;">  
                   <a href="#">
                     <div class="tm-special-description">
                       <h3 class="tm-special-title">{{$menu_salted->nama}}</h3>
@@ -96,7 +96,7 @@
               <div>
                 <div class="tm-special-item">
                   <div class="tm-special-img-container">
-                    <img src="{{asset('asset/img/'.$menu_pavlova->gambar)}}" alt="Special" class="img-responsive" style="width: 360px; height: 207px;">  
+                    <img src="{{asset($menu_pavlova->gambar)}}" alt="Special" class="img-responsive" style="width: 360px; height: 207px;">  
                     <a href="#">
                       <div class="tm-special-description">
                         <h3 class="tm-special-title">{{ $menu_pavlova->nama}}</h3>
@@ -109,7 +109,7 @@
               <div class="tm-special-container-lower">
                 <div class="tm-special-item">
                   <div class="tm-special-img-container">
-                    <img src="{{asset('asset/img/'.$menu_croissant->gambar)}}" alt="Special" class="img-responsive" style="width: 155px; height: 155px;">  
+                    <img src="{{asset($menu_croissant->gambar)}}" alt="Special" class="img-responsive" style="width: 155px; height: 155px;">  
                     <a href="#">
                       <div class="tm-special-description">
                         <p>{{$menu_croissant->nama}}</p>
@@ -119,7 +119,7 @@
                 </div>
                 <div class="tm-special-item">
                   <div class="tm-special-img-container">
-                    <img src="{{asset('asset/img/'.$menu_aglio->gambar)}}" alt="Special" class="img-responsive" style="width: 155px; height: 155px;">  
+                    <img src="{{asset($menu_aglio->gambar)}}" alt="Special" class="img-responsive" style="width: 155px; height: 155px;">  
                     <a href="#">
                       <div class="tm-special-description">
                         <p>{{$menu_aglio->nama}}</p>

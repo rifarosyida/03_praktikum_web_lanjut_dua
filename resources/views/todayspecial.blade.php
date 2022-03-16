@@ -30,7 +30,7 @@
             @foreach($all_menu as $objek)
             
                 <div class="tm-popular-item">
-                    <img src="{{ asset('asset/img/'.$objek->gambar) }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
+                    <img src="{{ asset($objek->gambar) }}" alt="Popular" class="tm-popular-item-img" style="width: 286px; height: 166px;">
                     <div class="tm-popular-item-description">
                         <h3 class="tm-handwriting-font tm-popular-item-title">{{ $objek->nama }}</h3><hr class="tm-popular-item-hr">
                         <p>{{ $objek->deskripsi }}</p>

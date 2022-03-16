@@ -54,7 +54,7 @@
   </div>
     @foreach ($all_menu as $objek)
     <div class="tm-product">
-      <img src="{{ asset('asset/img/'.$objek->gambar) }}" alt="Product" width="136px">
+      <img src="{{ asset($objek->gambar) }}" alt="Product" width="136px">
       <div class="tm-product-text">
         <h3 class="tm-product-title">{{ $objek->nama }}</h3>
         <p class="tm-product-description">{{ $objek->deskripsi }} </p>
